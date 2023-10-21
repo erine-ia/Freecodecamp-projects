@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="img-bg"></div>
+        <div class="form">
+            <div class="header">
+                <h1 id="title">Exemplo de Formulario</h1>
+                <p id="description">Lorem ipsum dolor sit, amet consectetur </p>
+            </div>
+            <form action="#" method="Post" id="survey-form">
+                <fieldset>
+                    <!-- nome -->
+                    <label for="name" id="name-label" class="label-first-fieldset">
+                        Name:
+                           <input type="text" id="name" name="name"
+                            placeholder="Maria José da Silva" required>
+                    </label>
+
+                    <!-- email -->
+                    <label for="email" id="email-label" class="label-first-fieldset">
+                        Email:
+                            <input type="email" name="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
+                        placeholder="email@mail.com" required >
+                    </label>
+
+                    <!-- age -->
+                    <label for="number" id="number-label" class="label-first-fieldset"> 
+                        Age:
+                           <input  type="number" name="number" id="number" max="120" min="13" placeholder="25" required>
+                    </label>
+
+                    <!-- password -->
+                    <label for="pwd-label" 
+                    id="password-label" class="label-first-fieldset" > 
+                    password:
+                           <input type="password" name="password" id="password" pattern="[a-z0-9]{8,}"
+                        placeholder="*****" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <!-- ocupation -->
+                    <label for="role">
+                        Current role
+                        <select name="role" id="dropdown">
+                            <option value=" "></option>
+                            <option value="employee" name="employee">Employee</option>
+                            <option value="unemployed" name="unemployed">Unemployed</option>
+                            <option value="other" name="other">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <!-- genre -->
+                <fieldset id="genre">
+                    <p>Genre: </p>
+                    <label for="female">  
+                        <input type="radio" name="genre" id="female" value="female"> Female
+                    </label>
+                    <label for="male">
+                        <input type="radio" name="genre" id="male" value="male"> Male
+                    </label>
+                    <label for="n-binary">
+                        <input type="radio" name="genre" id="n-binary" value="n-binary"> Non-binary
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <p>Topics of interest to you:</p>
+                    <label for="sports">           <input type="checkbox" name="sports" id="sports" value="sports" class="interest"> Sports </label>
+
+                    <label for="art-design"><input type="checkbox" name="art-design" id="art-design" value="art-design" class="interest">Art & design</label>
+
+                    <label for="health-fit"><input type="checkbox" name="health-fit" id="health-fit" value="health-fit" class="interest">Health & fitness</label>
+
+                    <label for="fashion"><input type="checkbox" name="fashion" id="fashion" value="fashion" class="interest">Fashion</label>
+
+                    <label for="travel"><input type="checkbox" name="travel" id="travel" value="travel" class="interest">Travel</label>
+
+                    <label for="food"><input type="checkbox" name="food" id="food" value="food" class="interest" >Food</label>
+                </fieldset>
+                <fieldset>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="For more..."></textarea>
+                </fieldset>
+
+
+
+            <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
