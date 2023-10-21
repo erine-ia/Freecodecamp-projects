@@ -11,9 +11,10 @@
 
 body{
     width: 100%;
-    font-family: "BebasNeue", "Helvetica", sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
 }
+
 ul li{
     list-style: none;
 }
@@ -49,7 +50,7 @@ header{
 }
 
 main{
-    width: 90%;
+    width: 100%;
     margin:0 auto;
     padding: 2% 3%;
     text-align: justify;
@@ -88,4 +89,54 @@ h1, .tribute-info{
     padding: 2% 0;
 }
 
+#img-div{
+    width: 100%;
+    
+}
+
+#img-div img{
+    display:block;
+    width: 100%;
+  
+
+}
+
+#image{
+    max-width:100%
+}
+
+
+footer{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    background-color:rgba(0, 162, 255, 0.74);
+    color: #E8E814;
+    padding:2%;
+
+}
+
+#img-album{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.album-cover{
+    width: 45%;
+    margin: 5px;
+    padding:5%;
+    background-color: #302e2e57;
+    text-align:center;
+    
+}
+
+
+
+#img-album img{
+    width: 100%;
+    /* border:solid; */
+}
 
