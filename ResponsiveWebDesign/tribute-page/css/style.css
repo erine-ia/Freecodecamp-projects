@@ -58,6 +58,7 @@ main{
 
 h1, .tribute-info{
     text-align: center;
+    color:#302e2e;
 }
 
 .chronologie{
@@ -71,7 +72,7 @@ h1, .tribute-info{
 }
 
 #timeline{
-    border: solid;
+    border: solid #302e2e9d;
     padding: 2%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -140,3 +141,27 @@ footer{
     /* border:solid; */
 }
 
+.img-caption-album{
+    color: rgb(41, 90, 153);
+    padding-top: 2%;
+    font-size: 1.3rem;
+}
+
+
+.discography{
+    width: 100%;
+    
+}
+
+.spotify-links{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.spotify-links iframe{
+    width: 40%;
+    margin: 2%;
+}
